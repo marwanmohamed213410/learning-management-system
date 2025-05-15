@@ -6,6 +6,7 @@ package grades;
 import dashboard.dashboard;
 import javax.swing.JOptionPane;
 import learning_management_system.login.loginApllication;
+import assignments.assignments_app;
 
 /**
  *
@@ -33,7 +34,7 @@ public class grades_page extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         bgrades2 = new javax.swing.JButton();
         bcources = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
+        bassignment = new javax.swing.JButton();
         pexit2 = new javax.swing.JButton();
         blogout2 = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
@@ -56,6 +57,7 @@ public class grades_page extends javax.swing.JFrame {
         jLabel13 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
 
@@ -81,13 +83,13 @@ public class grades_page extends javax.swing.JFrame {
             }
         });
 
-        jButton8.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/assignment2.png"))); // NOI18N
-        jButton8.setText("Assignments   ");
-        jButton8.setBorder(null);
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        bassignment.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        bassignment.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/assignment2.png"))); // NOI18N
+        bassignment.setText("Assignments   ");
+        bassignment.setBorder(null);
+        bassignment.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                bassignmentActionPerformed(evt);
             }
         });
 
@@ -116,7 +118,7 @@ public class grades_page extends javax.swing.JFrame {
                     .addComponent(blogout2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(bassignment, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(bgrades2, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 18, Short.MAX_VALUE)))
                 .addContainerGap())
@@ -130,7 +132,7 @@ public class grades_page extends javax.swing.JFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(214, 214, 214)
-                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(bassignment, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(bgrades2, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -408,9 +410,12 @@ public class grades_page extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_pexit2ActionPerformed
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void bassignmentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bassignmentActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
+        assignments_app assingn = new assignments_app();
+        assingn.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_bassignmentActionPerformed
 
     private void bcourcesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bcourcesActionPerformed
         // TODO add your handling code here:
@@ -460,10 +465,10 @@ public class grades_page extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton bassignment;
     private javax.swing.JButton bcources;
     private javax.swing.JButton bgrades2;
     private javax.swing.JButton blogout2;
-    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

@@ -4,6 +4,7 @@
  */
 package dashboard;
 
+import assignments.assignments_app;
 import grades.grades_page;
 import java.awt.Color;
 import javax.swing.JOptionPane;
@@ -35,7 +36,7 @@ public class dashboard extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         bgrades = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        bassignmen = new javax.swing.JButton();
         pexit = new javax.swing.JButton();
         blogout = new javax.swing.JButton();
         panelRound1 = new Panel_redondo.PanelRound();
@@ -47,6 +48,7 @@ public class dashboard extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         bg.setBackground(new java.awt.Color(204, 204, 204));
 
@@ -72,13 +74,13 @@ public class dashboard extends javax.swing.JFrame {
             }
         });
 
-        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/assignment2.png"))); // NOI18N
-        jButton4.setText("Assignments   ");
-        jButton4.setBorder(null);
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        bassignmen.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        bassignmen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning_management_system/assets/assignment2.png"))); // NOI18N
+        bassignmen.setText("Assignments   ");
+        bassignmen.setBorder(null);
+        bassignmen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                bassignmenActionPerformed(evt);
             }
         });
 
@@ -107,7 +109,7 @@ public class dashboard extends javax.swing.JFrame {
                     .addComponent(blogout, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(bassignmen, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(bgrades, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 18, Short.MAX_VALUE)))
                 .addContainerGap())
@@ -121,7 +123,7 @@ public class dashboard extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(214, 214, 214)
-                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(bassignmen, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(bgrades, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 220, Short.MAX_VALUE)
@@ -253,9 +255,12 @@ public class dashboard extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void bassignmenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bassignmenActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+        assignments_app assingn = new assignments_app();
+        assingn.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_bassignmenActionPerformed
 
     private void pexitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pexitActionPerformed
         // TODO add your handling code here:
@@ -325,12 +330,12 @@ public class dashboard extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton bassignmen;
     private javax.swing.JPanel bg;
     private javax.swing.JButton bgrades;
     private javax.swing.JButton blogout;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
